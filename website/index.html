@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+   <meta charset="UTF-8">
+   <title>Navigation Bar With Scroll Every Section</title>
+ <link rel="stylesheet" href="css/index.css">
+  <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">coding</a></div>
+      <ul class="menu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#BLOG">BLOG</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section id="Home">
+    <p><span id="typewriter"></span></p>
+  </section>
+  <section id="About">
+    <h1>About Me</h1>
+  </section>
+  <section id="Projects">
+    <h1>Projects</h1>
+  </section>
+  <section id="Contact">
+    <h1>Contact</h1>
+  
+  </section>
+
+  <section id="BLOG">
+  <h1> BLOG</h1>
+  <div class="form-container">
+    <form class="form" id="blogForm">
+      <div class="form-group">
+        <label for="title">TITLE</label>
+        <input type="text" id="title" name="title" required="">
+      </div>
+      <div class="form-group">
+        <label for="content">CONTENT</label>
+        <textarea name="content" id="content" rows="10" cols="50" required=""></textarea>
+      </div>
+      <div class="form-group">
+        <label for="image">UPLOAD IMAGE</label>
+        <input type="file" id="image" name="image" accept="image/*" onchange="previewImage()">
+      </div>
+      <button class="form-submit-btn" type="button" onclick="submitForm()">UPLOAD</button>
+    </form>
+    <img id="previewImage" alt="Preview Image">
+  </div>
+</section>
+
+<div class="button">
+  <a href="#Home"><i class="fas fa-arrow-up"></i></a>
+</div>
+
+  <script src="js/materialize.js"></script>
+</body>
+</html>
